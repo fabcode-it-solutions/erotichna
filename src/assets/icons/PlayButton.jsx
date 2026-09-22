@@ -1,0 +1,9 @@
+import React from 'react'
+
+const PlayButton = ({className}) => {
+  return (
+<svg xmlns="http://www.w3.org/2000/svg" className={className || ''} viewBox="0 0 104 104"><g fill="none"><circle cx="50.688" cy="50.688" r="50.688" stroke="#FFF" transform="translate(1 1)"></circle><path fill="#FFF" d="M75.394 52.073l-37.39 18.695v-37.39z"></path></g></svg>
+  )
+}
+
+export default PlayButton
