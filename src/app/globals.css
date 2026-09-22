@@ -1,0 +1,553 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-Light.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-Light.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-LightItalic.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-Regular.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-Italic.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-Italic.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-Medium.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-Medium.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-MediumItalic.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-Bold.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-BoldItalic.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-Black.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-Black.woff") format("woff");
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi/Satoshi-BlackItalic.woff2") format("woff2"),
+      url("./fonts/Satoshi/Satoshi-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-Light.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-Light.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-LightItalic.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-Regular.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-Italic.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-Italic.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-Medium.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-Medium.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-MediumItalic.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-Semibold.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-SemiboldItalic.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-SemiboldItalic.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-Bold.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./fonts/Gambetta/Gambetta-BoldItalic.woff2") format("woff2"),
+      url("./fonts/Gambetta/Gambetta-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Bodoni Poster";
+    src: url("./fonts/Bodoni-Poster.woff2") format("woff2"),
+      url("./fonts/Bodoni-Poster.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+body {
+  font-family: "Open Sans", "Open Sans Fallback";
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+:focus-visible {
+  outline: 0;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scroll-designed::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  border-radius: 5px;
+}
+input:-internal-autofill-selected {
+  box-shadow: 0 0 50px 50px #fff inset;
+}
+
+.scroll-designed::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.scroll-designed::-webkit-scrollbar-thumb {
+  @apply bg-stroke;
+}
+
+.scroll-designed::-webkit-scrollbar-thumb:hover {
+  @apply bg-stroke;
+}
+
+.swiper-scrollbar {
+  position: static !important;
+  margin-top: 16px;
+  height: 2px !important;
+  background: #ebebeb !important;
+  width: 100% !important;
+  border-radius: 8px !important;
+}
+
+.swiper-scrollbar-drag {
+  background: #242424;
+  border-radius: 8px !important;
+}
+
+.overlay-bg-nd {
+  background: var(
+    --Dark,
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    #2a292c
+  );
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button,
+.hide-spinner::-webkit-inner-spin-button,
+.hide-spinner::-webkit-outer-spin-button {
+  display: none;
+}
+<<<<<<< HEAD .sort-connections {
+  border-width: 1px !important;
+  max-width: 175px !important;
+  min-width: 175px !important;
+}
+=======>>>>>>>ff3729167e1ece920776e7cc9601357dc1e295e9
+  @media
+  only
+  screen
+  and
+  (max-width:990px) {
+  .product-slider .swiper-scrollbar {
+    margin-top: 8px;
+  }
+  .max-lg-mb\:hide-scroll-bar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+.overlay-radial-gradient {
+  background: radial-gradient(
+    80.99% 71.93% at 74.58% 0%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+body.overflow-hidden header {
+  z-index: 1;
+}
+.pricing-badge-included > div:nth-child(2) {
+  display: none;
+}
+
+@media only screen and (max-width: 749px) {
+  .mobile-video-active iframe {
+    width: 100%;
+    transform: none !important;
+  }
+  .bottom-sheet-mobile.max-lg-mb\:\!pb-\[0px\] {
+    padding-bottom: 0 !important;
+  }
+  .in-close rect {
+    display: none;
+  }
+  .mb-diff-tabs.order-tabs button.active {
+    border-radius: 40px;
+    border: 1px solid rgba(36, 36, 36, 0.35);
+    background: var(--Main-White, #fff);
+    color: #151516;
+  }
+
+  .mb-diff-tabs.order-tabs button {
+    color: #636363;
+    border-radius: 40px;
+    background: #f1f1f1;
+    border-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .mb-diff-tabs.order-tabs button div {
+    display: flex;
+    margin: 0 !important;
+  }
+
+  .pricing-badge-included > div:nth-child(2) {
+    display: flex;
+  }
+  .pricing-badge-included > div:nth-child(1) {
+    width: 100%;
+  }
+  .bottom-bar-hide .bottom-bar-wrapper {
+    z-index: 0;
+  }
+}
+input[type="date" i]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sales-chart svg > rect {
+  display: none;
+}
+span.jodit-placeholder {
+  @apply !text-sm !font-normal font-satoshi !text-[#aaaaaa];
+}
+
+.privacy-container {
+  background-color: black;
+}
+
+.privacy-title {
+  padding-top: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback";
+  font-style: normal;
+  font-weight: 600;
+}
+
+.privacy-description {
+  max-width: 80%;
+  margin-inline: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.privacy-description p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 25.6px;
+}
+
+.privacy-description h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.get-access-title {
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+}
+.sticky-header {
+  background: rgba(0, 0, 0, 0.8);
+}
+.error {
+  @apply p-2  text-sm rounded-lg bg-red-800 text-red-200;
+}
+@media only screen and (max-width: 600px) {
+  .privacy-description {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+
+.omnisend-embedded-from div {
+  padding: 0 !important;
+  flex-basis: 100%;
+}
+.omnisend-embedded-from.omnisend-embedded-from-dark
+  div
+  > input[id][type="email"] {
+  border-bottom: 1px solid #000 !important;
+  color: #000 !important;
+}
+.omnisend-embedded-from div > input[id][type="email"] {
+  background: transparent !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  border: 0 !important;
+  border-bottom: 1px solid #fff !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.omnisend-embedded-from [class$="opacity-layer"] {
+  display: none !important;
+}
+.privacy-description * {
+  color: rgba(255, 255, 255, 0.8);
+}
+.privacy-description ol,
+.jodit-react-container ol {
+  margin-bottom: 12px;
+  list-style: num;
+  padding-left: 22px;
+}
+.privacy-description div > ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 12px 0;
+}
+.jodit-react-container p {
+  margin-bottom: 12px;
+}
+.omnisend-embedded-from input::placeholder {
+  color: #9ca3af !important;
+}
+.omnisend-embedded-from div > button[type="submit"] {
+  padding: 0 !important;
+  font-size: 0 !important;
+  width: 30px !important;
+  z-index: 1;
+  cursor: pointer !important;
+  height: 30px !important;
+  position: absolute;
+  top: 10px;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  right: 0;
+}
+.omnisend-embedded-from div > button[type="submit"] {
+  background: url("./assets/images/arrow_forward_white.png") !important;
+  background-size: contain !important;
+}
+.omnisend-embedded-from.omnisend-embedded-from-dark
+  div
+  > button[type="submit"] {
+  background: url("./assets/images/arrow_forward_dark.png") !important;
+  background-size: contain !important;
+}
+.omnisend-mobile-container {
+  position: static !important;
+}
+html
+  #omnisend-form-67935ef33f123c4f0ae504aa-field-container-62a3147776d81914aa87ed98-emailField-input.omnisend-form-67935ef33f123c4f0ae504aa-field-container-62a3147776d81914aa87ed98-input,
+html
+  #omnisend-form-679330f54677e250387b1073-field-container-62a3147776d81914aa87ed98-emailField-input.omnisend-form-679330f54677e250387b1073-field-container-62a3147776d81914aa87ed98-input {
+  border-radius: 0 !important;
+  margin-bottom: 8px;
+}
+.omnisend-embedded-from h1 {
+  color: #fff !important;
+  font-size: 18px;
+  text-align: left !important;
+}
+
+.omnisend-embedded-from h3 {
+  color: #fff !important;
+  text-align: left !important;
+  font-size: 12px !important;
+}
+
+.omnisend-embedded-from.omnisend-embedded-from-dark h1,
+.omnisend-embedded-from.omnisend-embedded-from-dark h3 {
+  color: #000 !important;
+}
+.video-detal-slider .swiper-slide {
+  height: auto;
+}
+
+.video-detal-slider .swiper-slide > div {
+  height: 100%;
+}
+
+.video-detal-slider .swiper-slide > div img {
+  height: 100%;
+  object-fit: cover;
+}
+[data-swapy-highlighted] {
+  background: #fff;
+  z-index: 3;
+}
+
+.jodit-react-container h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+.privacy-description div h4 {
+  color: #fff;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+.jodit-react-container h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+.top-videos-grid [data-swapy-slot][data-swapy-highlighted] {
+  border: 1px dashed #f5f4f2;
+}
+.top-videos-grid [data-swapy-slot][data-swapy-highlighted] [data-swapy-item] {
+  background: #fff;
+}
+.top-videos-grid [data-swapy-slot][data-swapy-highlighted] [data-swapy-item] * {
+  opacity: 0;
+}
+.top-videos-grid
+  [data-swapy-slot][data-swapy-highlighted]
+  [data-swapy-item][data-swapy-dragging] {
+  z-index: 9 !important;
+}
+.top-videos-grid
+  [data-swapy-slot][data-swapy-highlighted]
+  [data-swapy-item][data-swapy-dragging]
+  * {
+  opacity: 1;
+}
+.appearance-textfield {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.otp-wrapper-container > div span {
+  display: none;
+}
+
+.otp-wrapper-container > div {
+  gap: 10px;
+}
+
+.otp-wrapper-container > div input {
+  aspect-ratio: 1;
+  display: block;
+  flex: 1;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 30px;
+
+  font-weight: 600;
+}

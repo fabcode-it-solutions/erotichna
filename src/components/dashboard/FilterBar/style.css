@@ -1,0 +1,23 @@
+    .mb-diff-tabs {
+        @apply max-lg-mb:p-0 max-lg-mb:m-0 max-lg-mb:mt-4 max-lg-mb:border-0 max-lg-mb:overflow-auto max-lg-mb:-mr-4 max-lg-mb:max-w-[calc(100vw-16px)];    
+       }
+      .mb-diff-tabs button {
+        @apply max-lg-mb:text-center max-lg-mb:font-satoshi max-lg-mb:text-sm max-lg-mb:font-medium 
+        max-lg-mb:leading-6 max-lg-mb:py-1.5 max-lg-mb:px-3.5 max-lg-mb:bg-white max-lg-mb:border max-lg-mb:border-stroke max-lg-mb:rounded-[48px]
+        max-lg-mb:whitespace-nowrap
+      }
+      .mb-diff-tabs button.active{
+        @apply max-lg-mb:border-heading;
+      }
+      .mb-diff-tabs button span,
+      .mb-diff-tabs button div {
+        @apply max-lg-mb:hidden;        
+      }
+      
+      .mb-diff-tabs > div {
+        @apply max-lg-mb:gap-2;
+      }
+      
+      .mb-diff-tabs button:first-child {
+        @apply max-lg-mb:min-w-[70px];        
+      }
